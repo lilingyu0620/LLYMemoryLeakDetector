@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A7FF37C210070120004FF8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7FF37B210070120004FF8C /* AppDelegate.m */; };
+		0A7FF37F210070120004FF8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7FF37E210070120004FF8C /* ViewController.m */; };
+		0A7FF382210070120004FF8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7FF380210070120004FF8C /* Main.storyboard */; };
+		0A7FF384210070140004FF8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7FF383210070140004FF8C /* Assets.xcassets */; };
+		0A7FF387210070140004FF8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7FF385210070140004FF8C /* LaunchScreen.storyboard */; };
+		0A7FF38A210070140004FF8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7FF389210070140004FF8C /* main.m */; };
+		0A7FF394210070140004FF8C /* LLYMemoryLeakDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7FF393210070140004FF8C /* LLYMemoryLeakDetectorTests.m */; };
+		0A7FF39F210070140004FF8C /* LLYMemoryLeakDetectorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7FF39E210070140004FF8C /* LLYMemoryLeakDetectorUITests.m */; };
+		0A7FF3AF210070640004FF8C /* LLYTestVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7FF3AD210070640004FF8C /* LLYTestVC1.m */; };
+		0A7FF3B0210070640004FF8C /* LLYTestVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7FF3AE210070640004FF8C /* LLYTestVC1.xib */; };
+		0A7FF3B42100707C0004FF8C /* LLYTestVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7FF3B22100707C0004FF8C /* LLYTestVC2.m */; };
+		0A7FF3B52100707C0004FF8C /* LLYTestVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7FF3B32100707C0004FF8C /* LLYTestVC2.xib */; };
+		0A7FF3B82100731E0004FF8C /* UIViewController+MemoryLeakDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7FF3B72100731E0004FF8C /* UIViewController+MemoryLeakDetector.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A7FF390210070140004FF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A7FF36F210070120004FF8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A7FF376210070120004FF8C;
+			remoteInfo = LLYMemoryLeakDetector;
+		};
+		0A7FF39B210070140004FF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A7FF36F210070120004FF8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A7FF376210070120004FF8C;
+			remoteInfo = LLYMemoryLeakDetector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A7FF377210070120004FF8C /* LLYMemoryLeakDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLYMemoryLeakDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A7FF37A210070120004FF8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A7FF37B210070120004FF8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A7FF37D210070120004FF8C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A7FF37E210070120004FF8C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A7FF381210070120004FF8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A7FF383210070140004FF8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A7FF386210070140004FF8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A7FF388210070140004FF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A7FF389210070140004FF8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A7FF38F210070140004FF8C /* LLYMemoryLeakDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLYMemoryLeakDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A7FF393210070140004FF8C /* LLYMemoryLeakDetectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYMemoryLeakDetectorTests.m; sourceTree = "<group>"; };
+		0A7FF395210070140004FF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A7FF39A210070140004FF8C /* LLYMemoryLeakDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLYMemoryLeakDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A7FF39E210070140004FF8C /* LLYMemoryLeakDetectorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYMemoryLeakDetectorUITests.m; sourceTree = "<group>"; };
+		0A7FF3A0210070140004FF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A7FF3AC210070640004FF8C /* LLYTestVC1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYTestVC1.h; sourceTree = "<group>"; };
+		0A7FF3AD210070640004FF8C /* LLYTestVC1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYTestVC1.m; sourceTree = "<group>"; };
+		0A7FF3AE210070640004FF8C /* LLYTestVC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLYTestVC1.xib; sourceTree = "<group>"; };
+		0A7FF3B12100707C0004FF8C /* LLYTestVC2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYTestVC2.h; sourceTree = "<group>"; };
+		0A7FF3B22100707C0004FF8C /* LLYTestVC2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYTestVC2.m; sourceTree = "<group>"; };
+		0A7FF3B32100707C0004FF8C /* LLYTestVC2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLYTestVC2.xib; sourceTree = "<group>"; };
+		0A7FF3B62100731E0004FF8C /* UIViewController+MemoryLeakDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MemoryLeakDetector.h"; sourceTree = "<group>"; };
+		0A7FF3B72100731E0004FF8C /* UIViewController+MemoryLeakDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MemoryLeakDetector.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A7FF374210070120004FF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A7FF38C210070140004FF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A7FF397210070140004FF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A7FF36E210070120004FF8C = {
+			isa = PBXGroup;
+			children = (
+				0A7FF379210070120004FF8C /* LLYMemoryLeakDetector */,
+				0A7FF392210070140004FF8C /* LLYMemoryLeakDetectorTests */,
+				0A7FF39D210070140004FF8C /* LLYMemoryLeakDetectorUITests */,
+				0A7FF378210070120004FF8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A7FF378210070120004FF8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A7FF377210070120004FF8C /* LLYMemoryLeakDetector.app */,
+				0A7FF38F210070140004FF8C /* LLYMemoryLeakDetectorTests.xctest */,
+				0A7FF39A210070140004FF8C /* LLYMemoryLeakDetectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A7FF379210070120004FF8C /* LLYMemoryLeakDetector */ = {
+			isa = PBXGroup;
+			children = (
+				0A7FF37A210070120004FF8C /* AppDelegate.h */,
+				0A7FF37B210070120004FF8C /* AppDelegate.m */,
+				0A7FF37D210070120004FF8C /* ViewController.h */,
+				0A7FF37E210070120004FF8C /* ViewController.m */,
+				0A7FF380210070120004FF8C /* Main.storyboard */,
+				0A7FF383210070140004FF8C /* Assets.xcassets */,
+				0A7FF385210070140004FF8C /* LaunchScreen.storyboard */,
+				0A7FF388210070140004FF8C /* Info.plist */,
+				0A7FF389210070140004FF8C /* main.m */,
+				0A7FF3AC210070640004FF8C /* LLYTestVC1.h */,
+				0A7FF3AD210070640004FF8C /* LLYTestVC1.m */,
+				0A7FF3AE210070640004FF8C /* LLYTestVC1.xib */,
+				0A7FF3B12100707C0004FF8C /* LLYTestVC2.h */,
+				0A7FF3B22100707C0004FF8C /* LLYTestVC2.m */,
+				0A7FF3B32100707C0004FF8C /* LLYTestVC2.xib */,
+				0A7FF3B62100731E0004FF8C /* UIViewController+MemoryLeakDetector.h */,
+				0A7FF3B72100731E0004FF8C /* UIViewController+MemoryLeakDetector.m */,
+			);
+			path = LLYMemoryLeakDetector;
+			sourceTree = "<group>";
+		};
+		0A7FF392210070140004FF8C /* LLYMemoryLeakDetectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A7FF393210070140004FF8C /* LLYMemoryLeakDetectorTests.m */,
+				0A7FF395210070140004FF8C /* Info.plist */,
+			);
+			path = LLYMemoryLeakDetectorTests;
+			sourceTree = "<group>";
+		};
+		0A7FF39D210070140004FF8C /* LLYMemoryLeakDetectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A7FF39E210070140004FF8C /* LLYMemoryLeakDetectorUITests.m */,
+				0A7FF3A0210070140004FF8C /* Info.plist */,
+			);
+			path = LLYMemoryLeakDetectorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A7FF376210070120004FF8C /* LLYMemoryLeakDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A7FF3A3210070140004FF8C /* Build configuration list for PBXNativeTarget "LLYMemoryLeakDetector" */;
+			buildPhases = (
+				0A7FF373210070120004FF8C /* Sources */,
+				0A7FF374210070120004FF8C /* Frameworks */,
+				0A7FF375210070120004FF8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLYMemoryLeakDetector;
+			productName = LLYMemoryLeakDetector;
+			productReference = 0A7FF377210070120004FF8C /* LLYMemoryLeakDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A7FF38E210070140004FF8C /* LLYMemoryLeakDetectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A7FF3A6210070140004FF8C /* Build configuration list for PBXNativeTarget "LLYMemoryLeakDetectorTests" */;
+			buildPhases = (
+				0A7FF38B210070140004FF8C /* Sources */,
+				0A7FF38C210070140004FF8C /* Frameworks */,
+				0A7FF38D210070140004FF8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A7FF391210070140004FF8C /* PBXTargetDependency */,
+			);
+			name = LLYMemoryLeakDetectorTests;
+			productName = LLYMemoryLeakDetectorTests;
+			productReference = 0A7FF38F210070140004FF8C /* LLYMemoryLeakDetectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0A7FF399210070140004FF8C /* LLYMemoryLeakDetectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A7FF3A9210070140004FF8C /* Build configuration list for PBXNativeTarget "LLYMemoryLeakDetectorUITests" */;
+			buildPhases = (
+				0A7FF396210070140004FF8C /* Sources */,
+				0A7FF397210070140004FF8C /* Frameworks */,
+				0A7FF398210070140004FF8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A7FF39C210070140004FF8C /* PBXTargetDependency */,
+			);
+			name = LLYMemoryLeakDetectorUITests;
+			productName = LLYMemoryLeakDetectorUITests;
+			productReference = 0A7FF39A210070140004FF8C /* LLYMemoryLeakDetectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A7FF36F210070120004FF8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = lly;
+				TargetAttributes = {
+					0A7FF376210070120004FF8C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					0A7FF38E210070140004FF8C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 0A7FF376210070120004FF8C;
+					};
+					0A7FF399210070140004FF8C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 0A7FF376210070120004FF8C;
+					};
+				};
+			};
+			buildConfigurationList = 0A7FF372210070120004FF8C /* Build configuration list for PBXProject "LLYMemoryLeakDetector" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A7FF36E210070120004FF8C;
+			productRefGroup = 0A7FF378210070120004FF8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A7FF376210070120004FF8C /* LLYMemoryLeakDetector */,
+				0A7FF38E210070140004FF8C /* LLYMemoryLeakDetectorTests */,
+				0A7FF399210070140004FF8C /* LLYMemoryLeakDetectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A7FF375210070120004FF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A7FF387210070140004FF8C /* LaunchScreen.storyboard in Resources */,
+				0A7FF384210070140004FF8C /* Assets.xcassets in Resources */,
+				0A7FF3B0210070640004FF8C /* LLYTestVC1.xib in Resources */,
+				0A7FF382210070120004FF8C /* Main.storyboard in Resources */,
+				0A7FF3B52100707C0004FF8C /* LLYTestVC2.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A7FF38D210070140004FF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A7FF398210070140004FF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A7FF373210070120004FF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A7FF37F210070120004FF8C /* ViewController.m in Sources */,
+				0A7FF38A210070140004FF8C /* main.m in Sources */,
+				0A7FF3B42100707C0004FF8C /* LLYTestVC2.m in Sources */,
+				0A7FF3AF210070640004FF8C /* LLYTestVC1.m in Sources */,
+				0A7FF3B82100731E0004FF8C /* UIViewController+MemoryLeakDetector.m in Sources */,
+				0A7FF37C210070120004FF8C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A7FF38B210070140004FF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A7FF394210070140004FF8C /* LLYMemoryLeakDetectorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A7FF396210070140004FF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A7FF39F210070140004FF8C /* LLYMemoryLeakDetectorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A7FF391210070140004FF8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A7FF376210070120004FF8C /* LLYMemoryLeakDetector */;
+			targetProxy = 0A7FF390210070140004FF8C /* PBXContainerItemProxy */;
+		};
+		0A7FF39C210070140004FF8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A7FF376210070120004FF8C /* LLYMemoryLeakDetector */;
+			targetProxy = 0A7FF39B210070140004FF8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A7FF380210070120004FF8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A7FF381210070120004FF8C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A7FF385210070140004FF8C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A7FF386210070140004FF8C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A7FF3A1210070140004FF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0A7FF3A2210070140004FF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A7FF3A4210070140004FF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PW2BL84NY9;
+				INFOPLIST_FILE = LLYMemoryLeakDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lly.LLYMemoryLeakDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A7FF3A5210070140004FF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PW2BL84NY9;
+				INFOPLIST_FILE = LLYMemoryLeakDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lly.LLYMemoryLeakDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0A7FF3A7210070140004FF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PW2BL84NY9;
+				INFOPLIST_FILE = LLYMemoryLeakDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lly.LLYMemoryLeakDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LLYMemoryLeakDetector.app/LLYMemoryLeakDetector";
+			};
+			name = Debug;
+		};
+		0A7FF3A8210070140004FF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PW2BL84NY9;
+				INFOPLIST_FILE = LLYMemoryLeakDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lly.LLYMemoryLeakDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LLYMemoryLeakDetector.app/LLYMemoryLeakDetector";
+			};
+			name = Release;
+		};
+		0A7FF3AA210070140004FF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PW2BL84NY9;
+				INFOPLIST_FILE = LLYMemoryLeakDetectorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lly.LLYMemoryLeakDetectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LLYMemoryLeakDetector;
+			};
+			name = Debug;
+		};
+		0A7FF3AB210070140004FF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PW2BL84NY9;
+				INFOPLIST_FILE = LLYMemoryLeakDetectorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lly.LLYMemoryLeakDetectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LLYMemoryLeakDetector;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A7FF372210070120004FF8C /* Build configuration list for PBXProject "LLYMemoryLeakDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A7FF3A1210070140004FF8C /* Debug */,
+				0A7FF3A2210070140004FF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A7FF3A3210070140004FF8C /* Build configuration list for PBXNativeTarget "LLYMemoryLeakDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A7FF3A4210070140004FF8C /* Debug */,
+				0A7FF3A5210070140004FF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A7FF3A6210070140004FF8C /* Build configuration list for PBXNativeTarget "LLYMemoryLeakDetectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A7FF3A7210070140004FF8C /* Debug */,
+				0A7FF3A8210070140004FF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A7FF3A9210070140004FF8C /* Build configuration list for PBXNativeTarget "LLYMemoryLeakDetectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A7FF3AA210070140004FF8C /* Debug */,
+				0A7FF3AB210070140004FF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A7FF36F210070120004FF8C /* Project object */;
+}
